@@ -4,6 +4,7 @@ let app = new express();
 
 app.get("",(req,res)=>{
     res.send("hi")
+    console.log(req.query);
 })
 app.get("/ab",(req,res)=>{
     res.send("about page hai pagli");
